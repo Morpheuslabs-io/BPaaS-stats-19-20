@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - morpheus-dashboard</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body { padding-top: 60px; }
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - morpheus-dashboard</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../best_authors.html'>Authors</a>
+</li>
+<li class=''>
+<a href='../../../files/by_date.html'>Files</a>
+</li>
+<li class='active'>
+<a href='../../../lines/by_date.html'>Lines</a>
+</li>
+<li class=''>
+<a href='../../../comments/by_date.html'>Comments</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class=''>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class='active'>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class=''>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Changed lines by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Hendrix TRUONG","type": "spline","data": [ [ 1543479644000,4912 ],[ 1543536000000,4912 ],[ 1543622400000,4912 ],[ 1543708800000,4912 ],[ 1543795200000,4912 ],[ 1543881600000,4912 ],[ 1543968000000,4912 ],[ 1544054400000,4912 ],[ 1544140800000,4912 ],[ 1544227200000,4912 ],[ 1544313600000,4912 ],[ 1544400000000,4912 ],[ 1544486400000,4912 ],[ 1544572800000,4912 ],[ 1544659200000,4912 ],[ 1544745600000,4912 ],[ 1544832000000,4912 ],[ 1544918400000,4912 ],[ 1545004800000,4912 ],[ 1545091200000,4912 ],[ 1545177600000,4912 ],[ 1545264000000,4912 ],[ 1545350400000,4912 ],[ 1545436800000,4912 ],[ 1545523200000,4912 ],[ 1545609600000,4912 ],[ 1545696000000,4912 ],[ 1545782400000,4912 ],[ 1545868800000,4912 ],[ 1545955200000,4912 ],[ 1546041600000,4912 ],[ 1546128000000,4912 ],[ 1546214400000,4912 ],[ 1546300800000,4912 ],[ 1546419212000,5222 ],[ 1546450005000,5387 ],[ 1546560000000,5387 ],[ 1546624748000,5708 ],[ 1546732800000,5708 ],[ 1546794392000,6131 ],[ 1546794618000,6184 ],[ 1546794647000,6186 ],[ 1546794713000,6188 ],[ 1546905600000,6188 ],[ 1546992000000,6188 ],[ 1547061922000,6378 ],[ 1547164800000,6378 ],[ 1547251200000,6378 ],[ 1547337600000,6378 ],[ 1547404316000,6427 ],[ 1547510400000,6427 ],[ 1547577932000,6541 ],[ 1547683200000,6541 ],[ 1547749047000,6560 ],[ 1547753229000,6763 ],[ 1547783361000,6781 ],[ 1547783723000,6791 ],[ 1547882473000,6797 ],[ 1547942400000,6797 ],[ 1548004704000,6801 ],[ 1548084713000,6804 ],[ 1548094197000,6806 ],[ 1548130093000,6814 ],[ 1548130124000,6827 ],[ 1548131208000,6832 ],[ 1548261743000,6853 ],[ 1548268717000,6889 ],[ 1548269836000,6923 ],[ 1548269878000,6951 ],[ 1548270151000,6989 ],[ 1548273413000,6993 ],[ 1548298360000,6997 ],[ 1548298759000,6998 ],[ 1548309996000,7021 ],[ 1548310759000,7023 ],[ 1548312879000,7044 ],[ 1548316595000,7071 ],[ 1548390282000,7081 ],[ 1548390622000,7084 ],[ 1548402658000,7086 ],[ 1548460800000,7086 ],[ 1548547200000,7086 ],[ 1548654114000,7093 ],[ 1548720000000,7093 ],[ 1548806400000,7093 ],[ 1548899904000,7093 ],[ 1548953667000,7095 ],[ 1548979200000,7095 ],[ 1549065600000,7095 ],[ 1549152000000,7095 ],[ 1549238400000,7095 ],[ 1549324800000,7095 ],[ 1549411200000,7095 ],[ 1549497600000,7095 ],[ 1549584000000,7095 ],[ 1549670400000,7095 ],[ 1549756800000,7095 ],[ 1549843200000,7095 ],[ 1549936676000,7157 ],[ 1549957915000,7159 ],[ 1549958081000,7159 ],[ 1549960018000,7161 ],[ 1549960516000,7165 ],[ 1549990828000,7190 ],[ 1550069962000,7209 ],[ 1550102400000,7209 ],[ 1550239632000,7342 ],[ 1550242120000,7348 ],[ 1550275200000,7348 ],[ 1550370249000,7607 ],[ 1550376783000,7624 ],[ 1550476332000,10563 ],[ 1550478203000,10571 ],[ 1550478552000,10573 ],[ 1550479184000,10579 ],[ 1550534400000,10579 ],[ 1550620800000,10579 ],[ 1550707200000,10579 ],[ 1550793600000,10579 ],[ 1550880000000,10579 ],[ 1550966400000,10579 ],[ 1551052800000,10579 ],[ 1551139200000,10579 ],[ 1551273415000,10686 ],[ 1551274075000,10693 ],[ 1551285054000,10743 ],[ 1551285854000,10779 ],[ 1551286346000,10779 ],[ 1551286655000,10785 ] ] }] };
+        
+        window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.changed_lines_by_author_by_date"></div>
+<small>
+<center>5 best authors shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
